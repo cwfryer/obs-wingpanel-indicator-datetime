@@ -1,0 +1,5 @@
+<package name="elementary-calendar" project="home:ccwwff:branches:X11:Pantheon:Branch">
+  <title>Maya</title>
+  <description>A slim, lightweight GTK+3 calendar app written in Vala</description>
+</package>
+

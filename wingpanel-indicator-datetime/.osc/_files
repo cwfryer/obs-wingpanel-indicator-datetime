@@ -1,0 +1,7 @@
+<directory name="wingpanel-indicator-datetime" rev="e8bdeb0a24b46603d526a98035615f0a" srcmd5="e8bdeb0a24b46603d526a98035615f0a">
+  <linkinfo project="X11:Pantheon:Branch" package="wingpanel-indicator-datetime" srcmd5="b0364120cd860d825ff2a1cdbaf342ac" baserev="b0364120cd860d825ff2a1cdbaf342ac" lsrcmd5="bd46fb535f2b06e1f089af8b098432da" />
+  <entry name="switchdeps.sh" md5="d3955c2b31c8b117df51266f00cd173e" size="3009" mtime="1545692909" />
+  <entry name="wingpanel-indicator-datetime-2.4.0.tar.gz" md5="eaa40f58cb14d3c0790baf8f11e17337" size="151721" mtime="1642779703" />
+  <entry name="wingpanel-indicator-datetime.changes" md5="d2b6180d4db224b4e985184e7b3e6820" size="8594" mtime="1710369144" />
+  <entry name="wingpanel-indicator-datetime.spec" md5="dad52d38d5d301440588bd2e33747e8b" size="2317" mtime="1710369145" />
+</directory>

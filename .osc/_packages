@@ -1,0 +1,5 @@
+<project name="home:ccwwff:branches:X11:Pantheon:Branch">
+  <package name="elementary-calendar" state=" " />
+  <package name="vala" state=" " />
+  <package name="wingpanel-indicator-datetime" state=" " />
+</project>

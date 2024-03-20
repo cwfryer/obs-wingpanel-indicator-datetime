@@ -1,0 +1,7 @@
+<directory name="elementary-calendar" rev="0085e664d79ee8392a933f7c69a525ce" srcmd5="0085e664d79ee8392a933f7c69a525ce">
+  <linkinfo project="X11:Pantheon:Branch" package="elementary-calendar" srcmd5="100c92205efa7eccebe35a0204c014d7" baserev="100c92205efa7eccebe35a0204c014d7" lsrcmd5="a151a954237d41df263acdeca9452026" />
+  <entry name="calendar-7.0.0.tar.gz" md5="ba7f8da125513f3b19c88f555af862f9" size="631730" mtime="1710446045" />
+  <entry name="elementary-calendar.changes" md5="60378f4c5d698ec7d8ea95c0cd3003ed" size="13681" mtime="1710951521" />
+  <entry name="elementary-calendar.spec" md5="f8f18b7f27527014ed480da6c19cf928" size="5685" mtime="1710951522" />
+  <entry name="switchdeps.sh" md5="d3955c2b31c8b117df51266f00cd173e" size="3009" mtime="1545692777" />
+</directory>

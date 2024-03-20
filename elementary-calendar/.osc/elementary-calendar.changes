@@ -1,0 +1,372 @@
+-------------------------------------------------------------------
+Wed Mar 20 15:38:48 UTC 2024 - Casey <casey@extrafries.org>
+
+- Fixed
+  * .spec file
+    - appdata renamed to metainfo
+    - calendar-daemon is now calendar --background
+
+-------------------------------------------------------------------
+Thu Mar 14 19:43:36 UTC 2024 - Casey Fryer <casey@extrafries.org>
+
+- Update to 7.0.0:
+  * Add support for Evolution Data Server 3.46
+    - This fixes the OBS build error
+  * Fix meson warning for run_command
+  * Require newer meson and fix deprecations
+  * Allow to fallback to statically linked libchamplain
+  * Metainfo Improvements
+  * Application: Force use of portals
+  * Style updates
+
+- 6.1.1 changes:
+  + Minor Updates:
+    - Updated app icon
+    - Updated translations
+- 6.1.2 changes:
+  + Minor Updates:
+    - Updated translations
+
+-------------------------------------------------------------------
+Sun Feb 20 15:38:18 UTC 2022 - Alexei Podvalsky <avvissu@yandex.by>
+
+- Update to 6.1.0:
+  * Ask for confirmation before deleting events
+  * Follow email and web links in the event description with
+    Control + Click
+  * Disabled checkbox "Mark as default calendar" in calendar
+    settings, if the calendar is read-only
+  * Removed no longer needed sandbox permission for accounts
+    service
+  * Fixed potential memory leak
+
+-------------------------------------------------------------------
+Fri Nov  5 06:22:50 UTC 2021 - Alexei Podvalsky <avvissu@yandex.by>
+
+- Update to 6.0.3:
+- Fixes:
+  * Ensure Calendar runs in the background on startup
+  * Fix memory leak when getting timezone information
+  * Reliably read Windows-style timezones
+- Minor Updates:
+  * Updated translations
+
+-------------------------------------------------------------------
+Fri Oct  8 23:55:04 UTC 2021 - Alexei Podvalsky <avvissu@yandex.by>
+
+- Fix starting daemon 
+
+-------------------------------------------------------------------
+Fri Sep 24 15:54:28 UTC 2021 - Alexei Podvalsky <avvissu@yandex.by>
+
+- Update to 6.0.2:
+- Fixes:
+  * Fix notification icons in the notification indicator
+  * Fix an issue where event timezones were overwritten
+  * Ensure Calendar is launched when notifications are clicked
+- Minor Updates:
+  * Updated translations
+
+-------------------------------------------------------------------
+Mon Sep  6 22:04:46 UTC 2021 - Alexei Podvalsky <avvissu@yandex.by>
+
+- Update to 6.0.1:
+  * Fixes:
+  * Fix broken calendar color with some online providers
+  * Fix an issue with some all-day events
+  * Minor Updates:
+  * Updated translations
+  * New Features:
+  * Import ICS files from the gear menu
+  * Support the dark style
+  * Properly show events on the last day of the month
+  * Fix end times for all-day events
+  * Notify for all alarms on an event
+  * Improved offline support
+  * New colorful avatar fallbacks
+  * Include "film" as an event icon keyword
+  * Add Mint and Bubblegum to calendar color chooser
+  * Link to Online Accounts settings in the gear menu
+  * Performance improvements
+
+-------------------------------------------------------------------
+Sun Oct 11 07:17:07 UTC 2020 - Alexei Podvalsky <avvissu@yandex.by>
+
+- Update to 5.1.1:
+  * Minor Updates:
+  * Fix an issue where new events could appear twice in Calendar
+  * "Mark as default calendar" box is now correctly checked when
+    editing a calendar
+  * Updated translations
+
+-------------------------------------------------------------------
+Fri Sep  4 13:29:49 UTC 2020 - Alexei Podvalsky <avvissu@yandex.by>
+
+- Update to 5.1.0:
+  * Merge patterns for 'to' (#578)
+  * Implement floating timezones (#579)
+  * Make EventDialog modal (#582)
+  * Improve handling of week start (#537)
+  * Fix editing of recurring events (#519)
+  * RDNN gresource.xml (#569)
+  * Rename Maya Daemon to Calendar Daemon (#570)
+  * MainWindow: don't resize sidebar with window (#567)
+  * Update io.elementary.calendar.appdata.xml.in
+
+-------------------------------------------------------------------
+Thu Jul 16 17:55:25 UTC 2020 - Alexei Podvalsky <avvissu@yandex.by>
+
+- Update to 5.0.6:
+  * Keep today state updated (#532)
+  * Remove duplicate grid construction in CalendarView (#531)
+  * Calendar.Store: Add vapi changes to complete a task (#558)
+  * Consistent placeholder label styling (#559)
+  * Renamed Maya.Model.CalendarModel to Calendar.Store (#557)
+  * Added missing files to POTFILES (#556)
+  * Moved needed util functions for Calendar.Store to
+    Calendar.Util (#555)
+  * Initial move towards Calendar.Util.* (#554)
+  * Add nullable annotations to Gee.Map.get () (#548)
+  * Correct libical.vapi ICal.Recurrence.get_by_day_array (#543)
+  * Properly handle libical timezones (#515)
+  * Make sidebar labels not selectable (#534)
+  * SourceSelector: Use Gtk.ModelButton instead of style class
+    (#524)
+
+-------------------------------------------------------------------
+Tue Jun  2 18:32:41 UTC 2020 - Alexei Podvalsky <avvissu@yandex.by>
+
+- Update to 5.0.5:
+  * Update github workflows to checkout@v2, update the CI
+    dependencies and use Odin for release (#525)
+  * Move load() call after all widget setup (#505)
+  * Use GLib.Settings for saved state (#499)
+  * Fix behavior of removing occurrences of recurrent events
+    (#506)
+  * Monthly repeats by the same day should use 'by_month_day'
+    attribute (#507)
+  * Second option for Monthly recurrence is displayed when
+    editing an event (#509)
+  * Application: lookup schemas recursive (#502)
+
+-------------------------------------------------------------------
+Wed Apr 29 21:04:49 UTC 2020 - Alexei Podvalsky <avvissu@yandex.by>
+
+- Switch to evolution-data-server >= 3.8.0
+
+-------------------------------------------------------------------
+Mon Apr  6 19:27:15 UTC 2020 - Alexei Podvalsky <avvissu@yandex.by>
+
+- Update to 5.0.4:
+  * Remove unused MayaSettings (#498)
+  * Ellipsize long guest names (#496)
+  * Don't overwrite events unnecessarily when parsing (#482)
+  * Add build to Actions (#490)
+  * Replace Gtk.Toolbar with Gtk.ActionBar (#489)
+  * Travis: Specify node 10.17.0
+  * Avoid repating event time if end equals start (#486)
+  * Use GLib.Settings for show-weeks (#473)
+  * Update io.elementary.calendar.appdata.xml.in
+  * Correctly set reminder type when saving (#481)
+  * Merge remote-tracking branch 'weblate/master'
+
+-------------------------------------------------------------------
+Thu Nov 28 20:12:29 UTC 2019 - Alexei Podvalsky <avvissu@yandex.by>
+
+- Update to 5.0.3:
+  * LocationPanel: handle possible null geo (#465)
+
+-------------------------------------------------------------------
+Wed Nov 27 06:25:22 UTC 2019 - Alexei Podvalsky <avvissu@yandex.by>
+
+- Update to 5.0.2:
+  * Add Lint to CI (#434)
+  * Set color as fg_color for cell class (#458)
+  * Reset AgendaView items when parameters change (#456)
+  * Travis: downgrade node to 10
+  * Add Release to Actions (#450)
+  * AppData: Update release information (#448)
+  * Add specific CSS files per class (#443)
+  * Utils: Remove unused is_day_in_range (#442)
+  * Use GLib.DateWeekday (#441)
+  * Use the next whole hour for the default time (#209)
+  * Lint source files (#435)
+  * Delete CODE_OF_CONDUCT.md
+  * Delete FUNDING.yml
+  * Add compatibility with libecal-1.2 and libical-glib (#431)
+  * Fix libical.vapi
+  * More alignments with libical-glib and libecal-2.0
+  * Construct new event dialog at idle (#425)
+  * Improve the compatibility with libecal-2.0 and libical-glib
+    (#430)
+  * Bring more compatibility with libecal-2.0 and libical-glib
+    (#429)
+  * Use EDS to compute recursive events (#426)
+  * Merge branch 'origin/master' into Weblate.
+  * libical: rename ICal.DurationType into ICal.Duration
+  * CalendarModel: Fix wrong cast
+
+-------------------------------------------------------------------
+Mon Mar  4 13:54:13 UTC 2019 - Alexei Podvalsky <avvissu@yandex.by>
+
+- Update to 5.0:
+  * ContractorButtonWithMenu: Use FileChooserNative (#379)
+  * Merge branch 'origin/master' into Weblate
+  * Daemon: Use calendar icon in notifications (#378)
+  * Move languages format from core to src (#374)
+  * README: Add libgeoclue dep (#377)
+  * Daemon: fix indentation and whitespace (#376)
+  * README: remove notify dep
+  * Fix daemon to use GLib.Notification (#353)
+  * Application: present import window when opening ICS files 
+    (#369)
+  * Remove unused SourceManager (#373)
+
+-------------------------------------------------------------------
+Thu Nov  8 02:29:16 UTC 2018 - Alexei Podvalsky <avvissu@yandex.by>
+
+- Add regex for filtering provided libraries
+
+-------------------------------------------------------------------
+Wed Oct 17 18:39:54 UTC 2018 - Alexei Podvalsky <avvissu@yandex.by>
+
+- Update to 4.2.3:
+  * Use Gtk.Application (#278)
+  * Remove cairo draws (#276)
+  * Merge branch 'origin/master' into Weblate
+  * Fix Location Panel Initialization (#271)
+  * Draw week label border with CSS (#273)
+  * Add padding to weeknumber labels (#270)
+  * travis: update to latest Houston (#272)
+
+-------------------------------------------------------------------
+Mon Oct  8 14:14:45 UTC 2018 - Alexei Podvalsky <avvissu@yandex.by>
+
+- Update to 4.2.2:
+  * Merge branch 'origin/master' into Weblate
+  * Use elipsis instead of three dots (#265)
+  * Install daemon to libexec (#264)
+  * Eliminate Gtk warning about :focused (#259)
+- Switch to meson
+
+-------------------------------------------------------------------
+Mon Oct  8 14:05:04 UTC 2018 - Alexei Podvalsky <avvissu@yandex.by>
+
+- Drop maya-calendar-drop-obsolete-gconf2.patch
+
+-------------------------------------------------------------------
+Sat Jul  7 19:20:15 UTC 2018 - bjorn.lie@gmail.com
+
+- Add maya-calendar-drop-obsolete-gconf2.patch: Drop obsolete
+  gconf-2.0 dependency, patch sent upstream.
+- Following the above drop pkgconfig(gconf-2.0) BuildRequires: No
+  longer needed, nor used.
+
+-------------------------------------------------------------------
+Sat Jun 23 16:34:06 UTC 2018 - avvissu@yandex.by
+
+- Update to 0.4.2.1:
+  * Merge remote-tracking branch 'origin/master'
+  * Utils: Update location of datetime indicator setting (#243)
+
+-------------------------------------------------------------------
+Sat Jun  9 23:56:42 UTC 2018 - avvissu@yandex.by
+
+- Update to 0.4.2:
+  * Rename files to follow RDNN naming convention (#226)
+  * Rename pc.cmake to pc.in
+  * Use build variables in appdata
+  * Clean up whitespace
+  * Remove unused dist and distcheck
+  * Don't append nonexistent module path
+  * Remove unused build variables
+  * Add EXEC_NAME build variable
+  * Rename config.vala.cmake to config.vala.in
+
+-------------------------------------------------------------------
+Fri Jun  8 23:32:04 UTC 2018 - avvissu@yandex.by
+
+- Rename to elementary-calendar
+- Drop maya-calendar-0.4.1-vapi.patch (fixed)
+- Add a new package with plugins
+- Update strings to search icon files
+- Fix: Icon will not found when changing the lang settings
+- Remove obsolete macros
+- Spec file cleanup
+
+-------------------------------------------------------------------
+Mon Apr 23 21:45:08 UTC 2018 - avvissu@yandex.by
+
+- Fix build with vala >= 0.40.4 (add maya-calendar-0.4.1-vapi.patch) 
+
+-------------------------------------------------------------------
+Sat Dec  2 14:47:51 UTC 2017 - avvissu@yandex.by
+
+- Update to 0.4.1:
+  * Require Granite >= 0.5
+  * Style calendar colours using css (#200)
+  * Correct dekstop names for make pot (#203)
+  * Store local calendar edits (#202)
+  * Fallback to char wrapping if word is too long to wrap (#199)
+  * Update version information (#197)
+  * Add debug option to app_options (#190)
+  * Use relative date format for same day notifications (#193)
+  * Remove fields for deprecated about dialog (#192)
+  * Correctly generate date ranges for repeat events (#183)
+  * Add missing releases to appdata (#188)
+  * Handle null dtends correctly (#184)
+  * Correctly import ics files (#185)
+  * Grab focus on event title when creating event (#146)
+  * Correct selecting days in other months (#175)
+  * Show event repeats in agenda correctly (#182)
+  * Allow right clicking EventButtons (#178)
+  * Allow right clicking week labels (#173)
+  * Load non-standard ports when editing (#176)
+  * Remove email notifications (#179)
+  * Rewrite MayaToolbar as HeaderBar (#163)
+  * Update EventButtons directly (#174)
+  * Sort events on Grid (#171)
+  * Follow week setting in System Settings (#172)
+  * Implement control q accel with simpleaction (#158)
+- Update homepage
+- Switch from bzr to git
+- Spec file cleanup
+
+-------------------------------------------------------------------
+Tue Jul 11 12:28:20 UTC 2017 - bwiedemann@suse.com
+
+- Sort file lists to always install the same .svg size
+  to fix build-compare (boo#1041090)
+
+-------------------------------------------------------------------
+Sat Sep 10 16:17:55 UTC 2016 - mailaender@opensuse.org
+
+- Update to version 0.4.0.2
+- Drop maya-0.3.1.1-eds-3.16.patch
+
+-------------------------------------------------------------------
+Mon Aug 22 06:00:58 UTC 2016 - avvissu@yandex.by
+
+- Fix: icon file not installed
+- Spec file cleanup
+
+-------------------------------------------------------------------
+Sat Feb 27 11:53:54 UTC 2016 - mailaender@opensuse.org
+
+- add maya-0.3.1.1-eds-3.16.patch
+
+-------------------------------------------------------------------
+Sat Jun 20 06:13:37 UTC 2015 - mailaender@opensuse.org
+
+- update to version 0.3.1.1
+
+-------------------------------------------------------------------
+Sun May 10 07:57:02 UTC 2015 - mailaender@opensuse.org
+
+- update to version 0.3.1
+  * requires vala 0.26 (lp#1455536)
+
+-------------------------------------------------------------------
+Sun Jun 15 13:24:16 UTC 2014 - mailaender@opensuse.org
+
+- initial packaging (version 0.3) for build.opensuse.org

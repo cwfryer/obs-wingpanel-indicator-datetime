@@ -1,0 +1,6 @@
+<directory name="vala" rev="0439b8b96183b65e16c54cce96e633a5" srcmd5="0439b8b96183b65e16c54cce96e633a5">
+  <linkinfo project="GNOME:Factory" package="vala" srcmd5="dda1ca7cfac9784b8411edbc5598ccca" baserev="8aee41270f4914c17d75a36ffd5a2342" lsrcmd5="7a8c4cbc6b2fcd4c4b92d330dfcff75f" />
+  <entry name="vala-0.56.16.tar.xz" md5="ba7738749bfb5b3c159a55825c9e20bc" size="4013716" mtime="1710408013" />
+  <entry name="vala.changes" md5="441c1bda28bbfd1fc58308280e2342b6" size="186658" mtime="1710855195" />
+  <entry name="vala.spec" md5="2ecb32823e86f4144b170fd8c5a770df" size="10153" mtime="1710408014" />
+</directory>

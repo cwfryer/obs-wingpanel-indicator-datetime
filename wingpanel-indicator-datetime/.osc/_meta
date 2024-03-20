@@ -1,0 +1,5 @@
+<package name="wingpanel-indicator-datetime" project="home:ccwwff:branches:X11:Pantheon:Branch">
+  <title>Wingpanel Date and Time Indicator</title>
+  <description>date and time indicator for wingpanel</description>
+</package>
+
