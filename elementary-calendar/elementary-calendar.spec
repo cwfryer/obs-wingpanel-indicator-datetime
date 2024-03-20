@@ -148,7 +148,6 @@ popd
 %{_datadir}/glib-2.0/schemas/io.elementary.calendar.gschema.xml
 %{_datadir}/icons/hicolor/*/*/io.elementary.calendar.??g
 %{_datadir}/metainfo/io.elementary.calendar.metainfo.xml
-%{_sysconfdir}/xdg/autostart/io.elementary.calendar.desktop
 %dir %{_libdir}/io.elementary.calendar
 %dir %{_libdir}/io.elementary.calendar/plugins
 
